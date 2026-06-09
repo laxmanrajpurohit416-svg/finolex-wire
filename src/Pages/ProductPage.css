@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/* ===================================== */
+/* PAGE CONTAINER */
+/* ===================================== */
+
+.product-page {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    min-height: 100vh;
+
+    /* Space for fixed header */
+    padding-top: 90px;
+}
+
+/* ===================================== */
+/* HEADER */
+/* ===================================== */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 9999;
+
+    background: #f8480e;
+
+    padding: 14px 10px 10px;
+
+    border-bottom: 1px solid #0a7ffb;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+.brand-title {
+    margin: 0;
+
+    color: #FFFFFF;
+
+    font-size: 24px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    line-height: 1.2;
+}
+
+.brand-tagline {
+    margin-top: 4px;
+
+    color: #000080;
+
+    font-size: 14px;
+
+    font-weight: bolder;
+}
+
+.brand-line {
+    width: 120px;
+    height: 3px;
+
+    background: #4072E5;
+
+    margin: 8px auto 0;
+
+    border-radius: 999px;
+}
+
+/* ===================================== */
+/* IMAGE */
+/* ===================================== */
+
+.image-wrapper {
+    padding: 16px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.product-image {
+    width: 75%;
+    max-width: 500px;
+
+    height: auto;
+
+    display: block;
+
+    border-radius: 16px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===================================== */
+/* BADGE */
+/* ===================================== */
+
+.verify-badge {
+    background: #e8f8ec;
+    color: #14803c;
+
+    margin: 16px;
+
+    padding: 14px;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ===================================== */
+/* TITLE */
+/* ===================================== */
+
+.product-title {
+    font-size: 28px;
+    line-height: 1.3;
+
+    padding: 0 16px;
+
+    color: #111;
+}
+
+.product-subtitle {
+    padding: 10px 16px;
+
+    color: #555;
+
+    line-height: 1.6;
+}
+
+/* ===================================== */
+/* INFO CARD */
+/* ===================================== */
+
+.info-card {
+    margin: 16px;
+
+    background: white;
+
+    border-radius: 14px;
+
+    padding: 18px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.info-row {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 14px;
+
+    margin-bottom: 18px;
+
+    color: #000;
+}
+
+.info-row strong {
+    color: #000;
+}
+
+.icon {
+    font-size: 20px;
+
+    color: #d62828;
+
+    min-width: 20px;
+
+    margin-top: 2px;
+}
+
+/* ===================================== */
+/* SECTIONS */
+/* ===================================== */
+
+.section {
+    padding: 16px;
+}
+
+.section h2 {
+    background: linear-gradient(90deg,
+            #FFD502,
+            #FFF4B0);
+
+    color: #000;
+
+    padding: 12px 16px;
+
+    border-radius: 12px;
+
+    margin-bottom: 18px;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    text-align: center;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ===================================== */
+/* FEATURES */
+/* ===================================== */
+
+.feature-list {
+    list-style: none;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    color: #000;
+
+    line-height: 1.8;
+
+    margin-bottom: 12px;
+}
+
+.feature-icon {
+    color: #18a558;
+
+    min-width: 18px;
+
+    margin-top: 4px;
+}
+
+/* ===================================== */
+/* DESCRIPTION */
+/* ===================================== */
+
+.description {
+    color: #000;
+
+    line-height: 1.8;
+
+    margin-bottom: 14px;
+}
+
+/* ===================================== */
+/* CUSTOMER SUPPORT */
+/* ===================================== */
+
+.customer-service {
+    padding-bottom: 40px;
+}
+
+.customer-service p {
+    color: #000;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 12px;
+
+    flex-wrap: wrap;
+}
+
+/* ===================================== */
+/* MOBILE */
+/* ===================================== */
+
+@media (max-width: 767px) {
+
+    .product-page {
+        padding-top: 85px;
+    }
+
+    .brand-title {
+        font-size: 18px;
+    }
+
+    .brand-tagline {
+        font-size: 12px;
+    }
+
+    .product-title {
+        font-size: 24px;
+    }
+
+    .product-subtitle {
+        font-size: 15px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+
+    .info-row {
+        font-size: 15px;
+    }
+
+    .feature-list li {
+        font-size: 15px;
+    }
+
+    .product-image {
+        width: 80%;
+    }
+}
+
+/* ===================================== */
+/* TABLET */
+/* ===================================== */
+
+@media (min-width: 768px) {
+
+    .product-page {
+        max-width: 800px;
+    }
+
+    .product-title {
+        font-size: 34px;
+    }
+
+    .product-subtitle {
+        font-size: 18px;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+
+    .info-row {
+        font-size: 17px;
+    }
+
+    .feature-list li {
+        font-size: 17px;
+    }
+}
+
+/* ===================================== */
+/* DESKTOP */
+/* ===================================== */
+
+@media (min-width: 1024px) {
+
+    .product-page {
+        max-width: 900px;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        border-radius: 16px;
+
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    .brand-title {
+        font-size: 26px;
+    }
+
+    .brand-tagline {
+        font-size: 16px;
+    }
+
+    .product-title {
+        font-size: 40px;
+    }
+
+    .product-subtitle {
+        font-size: 20px;
+    }
+
+    .section h2 {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 18px;
+        line-height: 2;
+    }
+
+    .info-row {
+        font-size: 18px;
+    }
+
+    .feature-list li {
+        font-size: 18px;
+    }
+}
