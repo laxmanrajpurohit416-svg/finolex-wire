@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import ProductPage from "./Pages/ProductPage";
 import ProductPage1sqmm from "./Pages/ProductPage1sqmm";
 import ProductPage2_5sqmm from "./Pages/ProductPage2_5sqmm";
-
+import ProductPage4sqmm from "./Pages/ProductPage4sqmm";
 function App() {
   return (
     <Routes>
@@ -22,6 +22,10 @@ function App() {
       <Route path="/product/2-5-black" element={<ProductPage2_5sqmm />} />
       <Route path="/product/2-5-yellow" element={<ProductPage2_5sqmm />} />
       <Route path="/product/2-5-blue" element={<ProductPage2_5sqmm />} />
+      <Route path="/product/4-0-red" element={<ProductPage4sqmm />} />
+      <Route path="/product/4-0-black" element={<ProductPage4sqmm />} />
+      <Route path="/product/4-0-yellow" element={<ProductPage4sqmm />} />
+      <Route path="/product/4-0-blue" element={<ProductPage4sqmm />} />
     </Routes>
   );
 }
