@@ -1,8 +1,6 @@
 import "./ProductPage.css";
 import { useLocation } from "react-router-dom";
-
-import wireImage from "../assets/images/red-1-5sq.jpeg";
-
+import wireImage from "../assets/images/2-5sqmm.png";
 import {
   FaShieldAlt,
   FaTag,
@@ -18,7 +16,7 @@ import {
   FaTools,
 } from "react-icons/fa";
 
-function ProductPage() {
+function ProductPage2_5sqmm() {
   const location = useLocation();
 
   let wireColor = "Red";
@@ -29,8 +27,6 @@ function ProductPage() {
     wireColor = "Yellow";
   } else if (location.pathname.includes("blue")) {
     wireColor = "Blue";
-  } else if (location.pathname.includes("green")) {
-    wireColor = "Green";
   }
 
   return (
@@ -50,7 +46,7 @@ function ProductPage() {
         <span>100% Genuine | Original Finolex Product</span>
       </div>
       {/* TITLE */}
-      <h1 className="product-title">Premium Quality Wire 1.5 Sq MM - {wireColor}</h1>
+      <h1 className="product-title">Premium Quality Wire 2.5 Sq MM - {wireColor}</h1>
       <p className="product-subtitle">Electrical Wire | Trusted & Tested | Residential & Commercial Use</p>
       {/* INFO CARD */}
       <div className="info-card">
@@ -71,7 +67,7 @@ function ProductPage() {
         <div className="info-row">
           <FaRuler className="icon" />
           <div>
-            <strong>Wire Size :</strong> 1.5 Sq MM
+            <strong>Wire Size :</strong> 2.5 Sq MM
           </div>
         </div>
 
@@ -203,4 +199,4 @@ function ProductPage() {
   );
 }
 
-export default ProductPage;
+export default ProductPage2_5sqmm;

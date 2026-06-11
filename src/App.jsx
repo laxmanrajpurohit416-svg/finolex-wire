@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import ProductPage from "./Pages/ProductPage";
 import ProductPage1sqmm from "./Pages/ProductPage1sqmm";
+import ProductPage2_5sqmm from "./Pages/ProductPage2_5sqmm";
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
       <Route path="/product/1-0-yellow" element={<ProductPage1sqmm />} />
       <Route path="/product/1-0-blue" element={<ProductPage1sqmm />} />
       <Route path="/product/1-0-green" element={<ProductPage1sqmm />} />
+      <Route path="/product/2-5-red" element={<ProductPage2_5sqmm />} />
+      <Route path="/product/2-5-black" element={<ProductPage2_5sqmm />} />
+      <Route path="/product/2-5-yellow" element={<ProductPage2_5sqmm />} />
+      <Route path="/product/2-5-blue" element={<ProductPage2_5sqmm />} />
     </Routes>
   );
 }
