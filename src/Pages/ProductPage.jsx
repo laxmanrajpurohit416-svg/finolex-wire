@@ -1,4 +1,5 @@
 import "./ProductPage.css";
+import { useLocation } from "react-router-dom";
 
 import wireImage from "../assets/images/red-1-5sq.jpeg";
 
@@ -18,37 +19,42 @@ import {
 } from "react-icons/fa";
 
 function ProductPage() {
+  const location = useLocation();
+
+  let wireColor = "Red";
+
+  if (location.pathname.includes("black")) {
+    wireColor = "Black";
+  } else if (location.pathname.includes("yellow")) {
+    wireColor = "Yellow";
+  } else if (location.pathname.includes("blue")) {
+    wireColor = "Blue";
+  } else if (location.pathname.includes("green")) {
+    wireColor = "Green";
+  }
+
   return (
     <div className="product-page">
       {/* HEADER */}
-
+      ```
       <header className="header">
         <h1 className="brand-title">⚡ FINOLEX WIRES & CABLES</h1>
 
         <p className="brand-tagline">Trusted. Tested. Reliable.</p>
       </header>
-
       {/* PRODUCT IMAGE */}
-
       <div className="image-wrapper">
         <img src={wireImage} alt="Finolex Wire" className="product-image" />
       </div>
-
       {/* GENUINE BADGE */}
-
       <div className="verify-badge">
         <FaShieldAlt />
         <span>100% Genuine | Original Finolex Product</span>
       </div>
-
       {/* TITLE */}
-
-      <h1 className="product-title">Premium Quality Wire 1.5 Sq MM</h1>
-
+      <h1 className="product-title">Premium Quality Wire 1.5 Sq MM - {wireColor}</h1>
       <p className="product-subtitle">Electrical Wire | Trusted & Tested | Residential & Commercial Use</p>
-
       {/* INFO CARD */}
-
       <div className="info-card">
         <div className="info-row">
           <FaTag className="icon" />
@@ -60,7 +66,7 @@ function ProductPage() {
         <div className="info-row">
           <FaPalette className="icon" />
           <div>
-            <strong>Color :</strong> Red
+            <strong>Color :</strong> {wireColor}
           </div>
         </div>
 
@@ -85,9 +91,7 @@ function ProductPage() {
           </div>
         </div>
       </div>
-
       {/* PRODUCT FEATURES */}
-
       <section className="section">
         <h2>Product Features</h2>
 
@@ -123,9 +127,7 @@ function ProductPage() {
           </li>
         </ul>
       </section>
-
       {/* DESCRIPTION */}
-
       <section className="section">
         <h2>Description</h2>
 
@@ -139,9 +141,7 @@ function ProductPage() {
           space or upgrading old connections, this wire delivers reliable conductivity and long-lasting performance.
         </p>
       </section>
-
       {/* KEY FEATURES */}
-
       <section className="section">
         <h2>Key Features</h2>
 
@@ -172,9 +172,7 @@ function ProductPage() {
           </li>
         </ul>
       </section>
-
-      {/* CUSTOMER SERVICE */}
-
+      {/* CUSTOMER SUPPORT */}
       <section className="section customer-service">
         <h2>Customer Support</h2>
 
